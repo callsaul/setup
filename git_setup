@@ -1,0 +1,26 @@
+GIT cheatsheet
+===================
+
+Install and configure...
+
+sudo apt-get install git
+
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global core.editor emacs
+
+To check settings:
+
+git config --list
+
+To create a repository:
+$ git init
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'initial project version'
+
+To clone an existing repository:
+git clone https://github.com/libgit2/libgit2
+
+Check repository status:
+git status
