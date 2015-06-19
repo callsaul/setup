@@ -1,0 +1,21 @@
+Prerequistes for vidoo processing with openCV 
+==============================================
+
+install libgtk2.x-dev for GUI functions.
+install ffmpeg to be able to load video files:
+
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install ffmpeg
+
+Build opencv
+==============
+cmake .
+make 
+make install
+
+Linking with opencv
+====================
+	g++ main.cpp `pkg-config opencv --cflags --libs` -o main
+
